@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F3F5F8;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-oxford-hero {
+  background-color: #0B1528;
+  background-image:
+    radial-gradient(ellipse 70% 55% at 78% 18%, rgba(30, 64, 175, 0.28), transparent),
+    radial-gradient(ellipse 50% 45% at 15% 85%, rgba(15, 23, 42, 0.6), transparent);
+}
+
+.bg-oxford-band {
+  background-color: #0B1528;
+  background-image: radial-gradient(
+    ellipse 65% 50% at 20% 10%,
+    rgba(30, 58, 138, 0.24),
+    transparent
+  );
+}
+
+@media print {
+  header, footer, nav, button.no-print {
+    display: none !important;
+  }
+}

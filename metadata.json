@@ -1,0 +1,6 @@
+{
+  "name": "Sri Krishna College of Arts and Science",
+  "description": "Official institutional website for Sri Krishna College of Arts and Science, Coimbatore — autonomous undergraduate, postgraduate, and doctoral programmes, placements, research facilities, and admissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
